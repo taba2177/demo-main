@@ -23,8 +23,8 @@ return new class extends Migration
             $table->decimal('shipping_price')->nullable();
             $table->string('shipping_method')->nullable();
             $table->text('notes')->nullable();
-            $table->timestamps();
             $table->softDeletes();
+            $table->timestamps();
         });
     }
 
